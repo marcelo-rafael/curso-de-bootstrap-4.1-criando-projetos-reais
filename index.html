@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!--************************************ Meta tags Obrigatórias ************************************-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--************************************ Google Fonts ************************************-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <!--************************************ Bootstrap CSS ************************************-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--************************************ Galeria CSS ************************************-->
+  <link rel="stylesheet" href="css/galeria.css">
+
+
+  <title>Projeto 1 - Curso Bootstrap</title>
+
+  <style>
+    input {
+      font-weight: bold !important;
+      border-radius: 0px !important;
+      color: #667eea !important;
+    }
+
+    select {
+      font-weight: bold !important;
+      color: #667eea !important;
+      border-radius: 0px !important;
+    }
+
+    textarea {
+      font-weight: bold !important;
+      color: #667eea !important;
+      border-radius: 0px !important;
+    }
+
+    button {
+      border-radius: 0px !important;
+    }
+
+    #fundojumbotron {
+      background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      height: 700px;
+    }
+
+
+    #tamanhoimagem {
+      width: 390px;
+      height: 565px;
+    }
+
+    #textocenter {
+      margin-top: 40px;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #FFFFFF;
+      font-weight: bold;
+      border-bottom: 3px solid #667eea;
+    }
+
+
+
+    @media only screen and (max-width: 700px) {
+      #fundojumbotron {
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        height: 1000px;
+      }
+
+      #tamanhoimagem {
+        width: 320px;
+        height: 495px;
+      }
+
+      #textocenter {
+        text-align: center;
+        margin-top: -20px;
+      }
+
+      .card {
+        margin: 0 auto;
+        float: none;
+      }
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--************************************ Inicio Menu ************************************-->
+  <div class="jumbotron jumbotron-fluid" id="fundojumbotron">
+
+    <nav class="navbar navbar-expand-lg" style="margin-top: -40px">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" width="64px" height="64px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto" style="font-size: 20px">
+          <li class="nav-item active">
+            <a class="nav-link" href="#sobre">Sobre Nós</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#servico">Serviços</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#portfolio">Portfólio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#faleconosco">Fale Conosco</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="color: #fff;" id='textocenter'>
+          <h1>Olá, Tripulante</h1>
+          <h1 style="font-weight: bold">Venha fazer parte <span
+              style="font-size: 80px;font-family: 'Roboto Condensed', sans-serif;">NOSSO MUNDO </span></h1>
+        </div>
+        <div class="col-md-6" style="margin-top: -40px">
+
+          <div style="text-align: center">
+            <img src="img/celular3.png" id='tamanhoimagem'>
+          </div>
+
+          <!--
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div>
+        -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--************************************ Inicio Menu ************************************-->
+
+  <!--************************************ Inicio Sobre Nós ************************************-->
+  <div class="container d-none d-md-block d-lg-block d-xl-block">
+    <section id="sobre"></section>
+    <div style="text-align: center">
+      <br>
+      <h3 style="font-size: 80px;font-family: 'Roboto Condensed', sans-serif;">Sobre Nós</h3>
+      <p style='color: #8F8F8F;font-size: 20px'>Saiba os valores que sustentam a nossa empresa</p>
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="col-md-7">
+        <h2>Título</h2>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lacus eu lorem
+          porta varius quis et orci. Donec ut mi bibendum, suscipit justo eget, blandit massa. Integer venenatis
+          molestie blandit. Nulla ornare leo vitae nibh ornare, in iaculis massa ornare. Nunc et ex quis lacus
+          sollicitudin convallis quis id elit. Curabitur mattis finibus laoreet. Proin pulvinar mauris felis, ut
+          sollicitudin ligula porta sit amet. Curabitur posuere blandit scelerisque.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/dashboard.png" class="img-fluid">
+      </div>
+
+
+      <div class="col-md-5">
+        <img src="img/time.png" class="img-fluid">
+
+      </div>
+      <div class="col-md-7">
+        <h2>Título</h2>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lacus eu lorem
+          porta varius quis et orci. Donec ut mi bibendum, suscipit justo eget, blandit massa. Integer venenatis
+          molestie blandit. Nulla ornare leo vitae nibh ornare, in iaculis massa ornare. Nunc et ex quis lacus
+          sollicitudin convallis quis id elit. Curabitur mattis finibus laoreet. Proin pulvinar mauris felis, ut
+          sollicitudin ligula porta sit amet. Curabitur posuere blandit scelerisque.</p>
+      </div>
+
+      <div class="col-md-7">
+        <h2>Título</h2>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lacus eu lorem
+          porta varius quis et orci. Donec ut mi bibendum, suscipit justo eget, blandit massa. Integer venenatis
+          molestie blandit. Nulla ornare leo vitae nibh ornare, in iaculis massa ornare. Nunc et ex quis lacus
+          sollicitudin convallis quis id elit. Curabitur mattis finibus laoreet. Proin pulvinar mauris felis, ut
+          sollicitudin ligula porta sit amet. Curabitur posuere blandit scelerisque.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/suporte.png" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Sobre Nós Celulares -->
+  <div class="container d-block d-sm-block d-md-none">
+    <section id="sobre"></section>
+    <div style="text-align: center">
+      <br>
+      <h3 style="font-size: 80px;font-family: 'Roboto Condensed', sans-serif;">Sobre Nós</h3>
+      <p style='color: #8F8F8F'>Saiba os valores que sustentam a nossa empresa</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5">
+        <img src="img/dashboard.png" class="img-fluid">
+
+      </div>
+      <div class="col-md-7">
+        <h2>Título</h2>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lacus eu lorem
+          porta varius quis et orci. Donec ut mi bibendum, suscipit justo eget, blandit massa. Integer venenatis
+          molestie blandit. Nulla ornare leo vitae nibh ornare, in iaculis massa ornare. Nunc et ex quis lacus
+          sollicitudin convallis quis id elit. Curabitur mattis finibus laoreet. Proin pulvinar mauris felis, ut
+          sollicitudin ligula porta sit amet. Curabitur posuere blandit scelerisque.</p>
+      </div>
+
+
+      <div class="col-md-5">
+        <img src="img/time.png" class="img-fluid">
+
+      </div>
+      <div class="col-md-7">
+        <h2>Título</h2>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lacus eu lorem
+          porta varius quis et orci. Donec ut mi bibendum, suscipit justo eget, blandit massa. Integer venenatis
+          molestie blandit. Nulla ornare leo vitae nibh ornare, in iaculis massa ornare. Nunc et ex quis lacus
+          sollicitudin convallis quis id elit. Curabitur mattis finibus laoreet. Proin pulvinar mauris felis, ut
+          sollicitudin ligula porta sit amet. Curabitur posuere blandit scelerisque.</p>
+      </div>
+
+      <div class="col-md-5">
+        <img src="img/suporte.png" class="img-fluid">
+
+      </div>
+      <div class="col-md-7">
+        <h2>Título</h2>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lacus eu lorem
+          porta varius quis et orci. Donec ut mi bibendum, suscipit justo eget, blandit massa. Integer venenatis
+          molestie blandit. Nulla ornare leo vitae nibh ornare, in iaculis massa ornare. Nunc et ex quis lacus
+          sollicitudin convallis quis id elit. Curabitur mattis finibus laoreet. Proin pulvinar mauris felis, ut
+          sollicitudin ligula porta sit amet. Curabitur posuere blandit scelerisque.</p>
+      </div>
+    </div>
+  </div>
+  <!--************************************ Fim Sobre Nós ************************************-->
+
+  <!--************************************ Inicio Serviços ************************************-->
+  <div class="container">
+    <section id="servico"></section>
+    <hr>
+    </hr>
+    <div style="text-align: center">
+      <br>
+      <h3 style="font-size: 80px;font-family: 'Roboto Condensed', sans-serif;">Serviços</h3>
+      <br>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; border: none">
+          <center>
+            <img class="" src="img/app.png" width="100px" height="100px">
+          </center>
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Título do card</h5>
+            </center>
+            <p class="card-text" style="text-align: justify">Um exemplo de texto rápido para construir o título do card
+              e fazer preencher o conteúdo do card.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; border: none">
+          <center>
+            <img class="" src="img/ecommerce.png" width="100px" height="100px">
+          </center>
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Título do card</h5>
+            </center>
+            <p class="card-text" style="text-align: justify">Um exemplo de texto rápido para construir o título do card
+              e fazer preencher o conteúdo do card.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; border: none">
+          <center>
+            <img class="" src="img/site.png" width="100px" height="100px">
+          </center>
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Título do card</h5>
+            </center>
+            <p class="card-text" style="text-align: justify">Um exemplo de texto rápido para construir o título do card
+              e fazer preencher o conteúdo do card.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <div class="container" style="margin-top: 10px">
+    <div class="row ">
+      <div class="col-md-4">
+        <div class="card " style="width: 18rem; border: none">
+          <center>
+            <img class="" src="img/app.png" width="100px" height="100px">
+          </center>
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Título do card</h5>
+            </center>
+            <p class="card-text" style="text-align: justify">Um exemplo de texto rápido para construir o título do card
+              e fazer preencher o conteúdo do card.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; border: none">
+          <center>
+            <img class="" src="img/ecommerce.png" width="100px" height="100px">
+          </center>
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Título do card</h5>
+            </center>
+            <p class="card-text" style="text-align: justify">Um exemplo de texto rápido para construir o título do card
+              e fazer preencher o conteúdo do card.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; border: none">
+          <center>
+            <img class="" src="img/site.png" width="100px" height="100px">
+          </center>
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Título do card</h5>
+            </center>
+            <p class="card-text" style="text-align: justify">Um exemplo de texto rápido para construir o título do card
+              e fazer preencher o conteúdo do card.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--************************************ Fim Serviços ************************************-->
+
+  <!--************************************ Inicio Portfólio ************************************-->
+  <div class="container">
+    <section id="portfolio"></section>
+    <hr>
+    </hr>
+    <div style="text-align: center">
+      <br>
+      <h3 style="font-size: 80px;font-family: 'Roboto Condensed', sans-serif;">Portfólio</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 co-xs-12 gal-item">
+        <div class="row h-50">
+          <div class="col-md-12 col-sm-12 co-xs-12 gal-item">
+            <div class="box">
+              <img src="https://picsum.photos/600/701/?random" class="img-ht img-fluid rounded">
+            </div>
+          </div>
+        </div>
+
+        <div class="row h-50">
+          <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
+            <div class="box">
+              <img src="https://picsum.photos/600/702/?random" class="img-ht img-fluid rounded">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
+            <div class="box">
+              <img src="https://picsum.photos/600/703/?random" class="img-ht img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
+        <div class="col-md-12 col-sm-6 co-xs-12 gal-item h-25">
+          <div class="box">
+            <img src="https://picsum.photos/600/704/?random" class="img-ht img-fluid rounded">
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-6 co-xs-12 gal-item h-75">
+          <div class="box">
+            <img src="https://picsum.photos/600/705/?random" class="img-ht img-fluid rounded">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br />
+  </div>
+  <!--************************************ Fim Portfólio ************************************-->
+
+  <!--************************************ Inicio - Fale Conosco ************************************-->
+  <div class="container-fluid"
+    style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #FFF; ">
+    <section id="faleconosco"></section>
+    <div class="container">
+      <hr>
+      </hr>
+      <div style="text-align: center">
+        <br>
+        <h3 style="font-size: 80px;font-family: 'Roboto Condensed', sans-serif;">Fale Conosco</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <h3>Informações de Contato</h3>
+          <h5>Telefone</h5>
+          <p style="font-weight: bold">(11)9-5033-0322</p>
+          <h5>Endereço</h5>
+          <p style="font-weight: bold">Av. Engenheiro Armando Arruda Pereira - 5275 - São Paulo</p>
+          <br>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.1947391104727!2d-46.63570148447379!3d-23.66899287146203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4529b11503ed%3A0x9c6fae2fce864896!2sAv.%20Eng.%20Armando%20de%20Arruda%20Pereira%2C%205275%20-%20Vila%20do%20Encontro%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1579922365095!5m2!1spt-BR!2sbr"
+            width="300" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        </div>
+
+        <div class="col-md-7">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Nome</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" required
+                autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" required
+                autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Telefone</label>
+              <input type="numeric" class="form-control" id="exampleFormControlInput1" placeholder=""
+                autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Assunto</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Suporte</option>
+                <option>Serviço</option>
+                <option>Financeiro</option>
+
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Mensagem</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                required>Digite a sua Mensagem</textarea>
+            </div>
+            <div style="text-align: right">
+              <button type="submit" class="btn" style="background-color: #2C3B63;color: #fff">Enviar</button>
+            </div>
+            <br>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--************************************ Fim - Fale Conosco ************************************-->
+
+  <!--************************************ Inicio - Footer ************************************-->
+  <footer style="background-color: #000">
+    <br>
+    <center>
+      <p class="text-white">Marcelo Rafael Gonçalves - 2020</p>
+    </center>
+    <ul class="nav justify-content-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="#sobre">Sobre Nós</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#servico">Serviços</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#portfolio">Portfólio</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#faleconosco">Fale Conosco</a>
+      </li>
+    </ul>
+  </footer>
+  <!--************************************ Fim - Footer ************************************-->
+
+  <!--************************************ JavaScript (Opcional) ************************************-->
+  <!--************************************ jQuery primeiro, depois Popper.js, depois Bootstrap JS ************************************-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
