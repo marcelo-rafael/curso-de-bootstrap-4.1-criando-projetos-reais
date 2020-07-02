@@ -1,97 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/8786c39b09.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8786c39b09.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Projeto 4 - Modal</title>
-</head>
+  </head>
 
-<body>
-
-    
-
+  <body>
     <!-- Botão para acionar modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
-        Cadastro Aceito
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modalExemplo"
+    >
+      Cadastro Aceito
     </button>
 
     <!--modal aprovado-->
-    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cadastro do Usuário</h5>
-
-                </div>
-                <div class="modal-body">
-                    <center>
-                        <span style="color: green"><i class="fas fa-user-check fa-5x"></i></span>
-                        <br>
-                        <p style="margin-top: 10px">Cadastro Aprovado com Sucesso</p>
-                    </center>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> <i
-                            class="fas fa-times"></i></button>
-
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="modalExemplo"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Cadastro do Usuário
+            </h5>
+          </div>
+          <div class="modal-body">
+            <center>
+              <span style="color: green;"
+                ><i class="fas fa-user-check fa-5x"></i
+              ></span>
+              <br />
+              <p style="margin-top: 10px;">Cadastro Aprovado com Sucesso</p>
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Botão para acionar modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo2">
-        Cadastro Não Aceito
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modalExemplo2"
+    >
+      Cadastro Não Aceito
     </button>
 
     <!--modal não aprovado-->
-    <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cadastro do Usuário</h5>
-
-                </div>
-                <div class="modal-body">
-                    <center>
-                        <span style="color: red"><i class="fas fa-user-times fa-5x"></i></span>
-                        <br>
-                        <p style="margin-top: 10px">Cadastro não Aprovado</p>
-                    </center>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> <i
-                            class="fas fa-times"></i></button>
-
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="modalExemplo2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Cadastro do Usuário
+            </h5>
+          </div>
+          <div class="modal-body">
+            <center>
+              <span style="color: red;"
+                ><i class="fas fa-user-times fa-5x"></i
+              ></span>
+              <br />
+              <p style="margin-top: 10px;">Cadastro não Aprovado</p>
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/galeria.css">
 
 
-  <title>Projeto 1 - Curso Bootstrap</title>
+  <title>LandPage</title>
 
   <style>
     input {
@@ -101,6 +101,17 @@
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
+
+     #texto {
+        border-radius: 0px !important;
+        border: solid 3 px #000 !important;
+      }
+
+      #botao {
+        background-color: #000 !important;
+        color: #fff !important;
+        border-radius: 0px !important;
+      }
   </style>
 
 </head>
@@ -161,6 +172,62 @@
 
   </div>
   <!--************************************ Inicio Menu ************************************-->
+
+  <!--************************************ Inicio CTA ************************************-->
+  <div
+  class="container-fluid"
+  style="
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #667eea;
+  "
+>
+<div class="container">
+  <form>
+    <center>
+      <h1 style="font-size: 40px;font-family: 'Roboto Condensed', sans-serif; font-weight: bold;">RECEBA NOTÍCIAS EM PRIMEIRA MÃO <br> DIRETO NO SEU E-MAIL</h1>
+    </center>
+    <div class="form-row">
+      <div class="col">
+        <input
+          id="texto"
+          type="text"
+          class="form-control"
+          placeholder="Nome"
+          autocomplete="off"
+        />
+      </div>
+      <div class="col">
+        <input
+          id="texto"
+          type="text"
+          class="form-control"
+          placeholder="Sobrenome"
+          autocomplete="off"
+        />
+      </div>
+      <div class="col">
+        <input
+          id="texto"
+          type="text"
+          class="form-control"
+          placeholder="Seu melhor E-mail"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="col">
+        <button id="botao" type="submit" class="btn" style="width: 300px;">
+          Enviar
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+  <!--************************************ Fim CTA ************************************-->
 
   <!--************************************ Inicio Sobre Nós ************************************-->
   <div class="container d-none d-md-block d-lg-block d-xl-block">
